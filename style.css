@@ -31,11 +31,21 @@ body {
 
 #clear {
     margin-bottom: 10px;
+    margin-top: 5px;
     background-color: #A6E3E9;
     width: 100px;
     height: 30px;
     border-radius: 8px;
     border-color: #71C9CE;
+    border-style: solid;
+    transition: .3s;
+    color: #305658;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#clear:hover {
+    border-color: white;
 }
 
 #size {
