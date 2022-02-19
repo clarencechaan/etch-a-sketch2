@@ -54,12 +54,6 @@ function createGrid() {
         }
 }
 
-function promptForSize() {
-    do {
-        size = prompt("Enter number of squares per side between 1 and 100");
-    } while (size > 100 || size < 1 || isNaN(size) || size === "" || size === null);
-}
-
 const clearBtn = document.querySelector('#clear');
 clearBtn.addEventListener('click', clearGrid);
 
