@@ -4,6 +4,7 @@ document.body.appendChild(container);
 
 let size = 16;
 let penStyle = 'solid'
+const COLOR = "#305658"
 
 function clearGrid() {
 
@@ -32,13 +33,13 @@ function createGrid() {
 
                 square.addEventListener('mouseover', () => {
                     if (penStyle === 'solid') {
-                        square.style.backgroundColor = '#71C9CE';
+                        square.style.backgroundColor = COLOR;
                         square.style.opacity = 1;
                     } else if (penStyle === 'rainbow') {
                         let randomColor = Math.floor(Math.random()*16777215).toString(16);
                         square.style.backgroundColor = '#' + randomColor;
                     } else if (penStyle === 'translucent') {
-                        square.style.backgroundColor = '#71C9CE';
+                        square.style.backgroundColor = COLOR;
                         if (parseFloat(square.style.opacity) > 0) {
                             square.style.opacity = parseFloat(square.style.opacity) + 0.25;
                         } else {
